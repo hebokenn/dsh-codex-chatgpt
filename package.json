@@ -7,7 +7,7 @@
   "exports": {".": "./index.mjs"},
   "files": ["index.mjs", "bridge.mjs", "cordis.patch.yml", "README.md", "LICENSE"],
   "scripts": {"test": "node --test test/*.test.mjs"},
-  "dsh": {"bundle": {"patch": "./cordis.patch.yml", "meta": {"title": "Codex · ChatGPT 登录", "description": "通过本机已登录的 Codex 使用账号当前可用的 GPT 模型；不显示订阅剩余额度。"}}},
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml", "meta": {"title": "Codex · ChatGPT 登录", "description": "把本机已登录 Codex 可用的 GPT 模型接入 DSH 模型菜单，无需另配 OpenAI API Key；由本机 Codex App Server 提供模型列表和请求通道，工具执行与审批仍由 DSH 负责。不显示或增加订阅额度。"}}},
   "engines": {"node": ">=22"},
   "license": "MIT"
 }
