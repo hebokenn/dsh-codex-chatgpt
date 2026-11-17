@@ -1,0 +1,13 @@
+{
+  "name": "dsh-codex-chatgpt",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "Adds a local Codex ChatGPT app-server model adapter to the DSH model menu.",
+  "main": "./index.mjs",
+  "exports": {".": "./index.mjs"},
+  "files": ["index.mjs", "bridge.mjs", "cordis.patch.yml", "README.md", "LICENSE"],
+  "scripts": {"test": "node --test test/*.test.mjs"},
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml", "meta": {"title": "Codex · ChatGPT 额度", "description": "使用本机 Codex App Server 提供 ChatGPT 登录可用的 GPT 模型、思考档位和 DSH 工具。"}}},
+  "engines": {"node": ">=22"},
+  "license": "MIT"
+}
