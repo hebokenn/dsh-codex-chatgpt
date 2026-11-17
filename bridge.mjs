@@ -247,7 +247,7 @@ function metadata(row, cache) {
 
 export class CodexAdapter {
   constructor(options = {}) { this.options = {...options, timeoutMs: idleTimeoutMs(options.timeoutMs, 1)}; this.active = new Set(); this.catalog = null; this.catalogAt = 0; }
-  providerInfo(provider) { return {id: provider, name: 'Codex · ChatGPT 额度'}; }
+  providerInfo(provider) { return {id: provider, name: 'Codex · ChatGPT 登录'}; }
   providerRetryPolicy() { return RETRY_POLICY; }
   wire(signal) {
     const wire = new CodexWire({...this.options, signal, onTelemetry: entry => { this.recordTransport(entry); this.options.onTelemetry?.(entry); }});

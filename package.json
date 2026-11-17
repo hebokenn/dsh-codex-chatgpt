@@ -7,7 +7,7 @@
   "exports": {".": "./index.mjs"},
   "files": ["index.mjs", "bridge.mjs", "cordis.patch.yml", "README.md", "LICENSE"],
   "scripts": {"test": "node --test test/*.test.mjs"},
-  "dsh": {"bundle": {"patch": "./cordis.patch.yml", "meta": {"title": "Codex · ChatGPT 额度", "description": "使用本机 Codex App Server 提供 ChatGPT 登录可用的 GPT 模型、思考档位和 DSH 工具。"}}},
+  "dsh": {"bundle": {"patch": "./cordis.patch.yml", "meta": {"title": "Codex · ChatGPT 登录", "description": "通过本机已登录的 Codex 使用账号当前可用的 GPT 模型；不显示订阅剩余额度。"}}},
   "engines": {"node": ">=22"},
   "license": "MIT"
 }
